@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	box-sizing: border-box;
+	width: 100%;
+	font-family: 'Roboto', 'Lato', sans-serif;
+	background-color: #F2F2F2;
+}
+
+#container{
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+	margin: 0 auto !important;
+	overflow: hidden auto;
+}
+
+#container header .mark{
+	background-color: #FFF;
+	color: #872b2f;
+	border-bottom: 2px solid rgb(80,80,80) !important;
+}
+
+/*
+	HEADER
+*/
+
+/* CABEÇALHO */
+
+header{
+	grid-column: 1/4;
+}
+
+header .flex-top{
+	display: flex;
+	justify-content: space-around;
+	background-color: #872b2f;
+	padding: 10px !important;
+	align-items: center;
+}
+
+header .flex-top > div{
+	display: none;
+}
+
+header article > ul{
+	list-style: none;
+}
+
+header article li{
+	color: #fff;
+	font-size: 18px;
+}
+
+header article article a{
+	display: block;
+	width: 45px;
+	margin: 0 2px !important;
+}
+
+header article article img{
+	width: 100%;
+}
+
+header #icon-social{
+	display: flex;
+}
+
+header #icon-social a{
+	margin: 0 7px !important;
+}
+
+header #icon-social img{
+	width: 50px;
+}
+
+header nav.drop-menu{
+	background-color: #F6F6F6;
+}
+
+header nav.drop-menu div > li{
+	float: left;
+}
+
+header nav.drop-menu ul a > img{
+	width: 375px;
+	margin-right: 20px;
+}
+
+header nav.drop-menu ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header nav.drop-menu li{
+	position: relative;
+	width: 150px;
+	text-align: center;
+}
+
+header nav.drop-menu ul ul{
+	position: absolute;
+	display: block;
+	text-align: center;
+	justify-content: center;
+	visibility:	collapse;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+header nav.drop-menu li:hover ul{
+	visibility: visible;
+	background: #F6F6F6;
+	transition: all 0.3s;
+}
+
+header li{
+	font-size: 14px;
+}
+
+header nav.drop-menu a:not(#croce){
+	display: block;
+	text-decoration: none;
+	padding: 40px 0;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 500;
+	color: rgb(80, 80, 80);
+	border-bottom: 2px solid #F6F6F6;
+	
+}
+
+header nav.drop-menu a.drop-a{
+	padding: 20px !important;
+}
+
+header nav.drop-menu a:hover:not(#croce){
+	background-color: #FFF;
+	color: #872b2f;
+	transition-property: background-color color;
+	transition-delay: 1ms;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+	border-bottom: 2px solid rgb(80,80,80);
+}
+
+/* SESSÃO-1 */
+
+section#s1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	grid-column: 2/3;
+	margin: 30px 0;
+}
+
+#s1 article{
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	border-top: 5px solid #872b2f;
+	justify-content: space-around;
+	margin: 25px 0 !important;
+}
+
+#s1 article h2{
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #872b2f;
+}
+
+#s1 article span{
+	font-size: 14px;
+	color: rgb(80, 80, 80);
+	font-weight: 500;
+	margin: 15px 0 !important;
+}
+
+#s1 article img{
+	height: 275px;
+}
+
+#s1 article button{
+	background: none;
+	border: none;
+}
+
+#s1 article a{
+	display: block;
+	padding: 10px 20px !important;
+	text-align: left;
+	background-color: #872b2f;
+	color: #FFF;
+	width: 57px;
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: none;
+	margin-top: 15px !important;
+	border-radius: 5px;
+}
+
+#s1 article a:hover{
+	background-color: rgba(146, 29, 29, 0.7);
+	transition-property: background-color color;
+	transition-delay: 1ms;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+/* SESSÃO-2 */
+
+#s2{
+	grid-column: 2/3;
+}
+
+#s2 article{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 30px;
+	border-top: 5px dotted #CCC;
+}
+
+#s2 article h2{
+	text-transform: uppercase;
+	color: #872b2f;
+	text-align: center;
+	margin-bottom: 5px !important;
+}
+
+#s2 article > p{
+	color: rgb(130, 130, 130);
+	font-style: italic;
+	text-align: justify;
+	text-indent: 70px;
+	margin: 10px 0 !important;
+	font-size: 20px;
+}
+
+#s2 article h3, h4{
+	font-style: normal;
+	margin: 0 !important;
+	font-weight: bold;
+	color:rgb(80, 80, 80);
+	background: none;
+	font-size: 20px;
+}
+
+#s2 article h3{
+	margin-top: 10px !important;
+}
+
+/* RODAPÉ */
+
+footer{
+	background-color: #872b2f;
+	color: #FFF;
+	text-align: center;
+	padding: 20px !important;
+	line-height: 25px;
+	margin-top: 30px !important;
+	grid-column: 1/4;
+}
