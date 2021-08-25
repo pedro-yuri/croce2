@@ -162,8 +162,7 @@
     }
 
     header .flex-top > div{
-        margin: 20px 0;
-        display: block;
+        display: none;
     }
 
     section#s1 .at-2{
