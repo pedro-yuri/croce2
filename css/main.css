@@ -20,10 +20,52 @@ body{
 }
 
 #container header .mark{
-	background-color: #FFF;
-	color: #872b2f;
 	border-bottom: 2px solid rgb(80,80,80) !important;
 }
+
+p{
+	font-size: 18px;
+}
+
+/*
+	BACKGROUND
+*/
+
+#background{
+	background: url(../img/bg.jpg) no-repeat center;
+	margin-bottom: 35px;
+	grid-column: 1/4;
+}
+
+#background div:not(.bg-not){
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: rgba(0,0,0,0.5);
+	background-size: cover;
+	display: grid;	
+	height: 650px;
+	text-align: center;
+	align-items: center;
+	color: #FFF;
+}
+
+#background h1{
+	font-size: 50px;
+	font-weight: normal;
+}
+
+#background h1,p{
+	grid-column: 1/4;
+}
+
+#background p.bg-frase{
+	font-size: 25px;
+}
+
+#background article h3{
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
 
 /*
 	HEADER
@@ -311,4 +353,270 @@ footer{
 	line-height: 25px;
 	margin-top: 30px !important;
 	grid-column: 1/4;
+}
+
+
+
+
+/*
+	------------------------------------ HISTORICO ------------------------------------
+*/
+
+/* HIST-S1*/
+
+section#hist-s1{
+	grid-column: 2/3;
+	margin: 55px 0 20px 0;
+}
+
+#hist-s1 h2{
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #872b2f;
+	border-bottom: 5px solid #872b2f;
+	margin: 20px 0 50px 0;
+}
+
+#hist-s1 p{
+	margin: 25px 0;
+	text-align: justify;
+	line-height: 25px;
+}
+
+#hist-s1 div{
+	display: flex; 
+	justify-content: flex-end; 
+	margin: 0 20px;
+}
+
+#hist-s1 div p{
+	margin: 10px 0; 
+	text-align: right; 
+	border-left: 5px solid #CCC; 
+	color: rgb(80,80,80); 
+	padding-left: 5px; font-style: italic; 
+	font-weight: 500; display: inline-block;
+}
+
+#hist-s1 ul{
+	margin-left: 20px;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+
+
+
+/*
+	------------------------------------ COMISSOES ------------------------------------
+*/
+
+/* CON-S1 */
+
+#con-s1{
+	grid-column: 2/3;
+	margin: 50px 0 25px 0;
+}
+
+#con-s1 h2{
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #872b2f;
+	border-bottom: 5px solid #872b2f;
+	margin-bottom: 40px;
+}
+
+#con-s1 h3{
+	font-size: 25px;
+	text-transform: uppercase;
+	color: rgb(80, 80, 80);
+	margin: 25px 0;
+}
+
+#con-s1 article ul{
+	margin: 0 25px;
+}
+
+#con-s1 li{
+	line-height: 25px;
+	font-size: 18px;
+}
+
+
+
+
+/*
+	------------------------------------ MISSÃO ------------------------------------
+*/
+
+#mis-s1{
+	grid-column: 2/3;
+	padding-bottom: 100px;
+}
+
+#mis-s1 article ul{
+	margin: 0 20px;
+	font-size: 18px;
+}
+
+#mis-s1 h2{
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #872b2f;
+	border-bottom: 5px solid #872b2f;
+	margin: 40px 0;
+}
+
+#mis-s1 h3{
+	font-size: 25px;
+	text-transform: uppercase;
+	color: rgb(80, 80, 80);
+	margin: 25px 0;
+}
+
+#mis-s1 p,li{
+	line-height: 25px;
+}
+
+/*
+	------------------------------------ PLENÁRIA ------------------------------------
+*/
+
+#ple-s1{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-column: 2/3;
+	padding-bottom: 100px;
+}
+
+#ple-s1 h2{
+	grid-column: 1/3;
+}
+
+#ple-s1 h3{
+	font-size: 25px;
+}
+
+#ple-s1 > div{
+	grid-column: 1/2;
+}
+
+#ple-s1 div.plenaria{
+	grid-column: 2/3;
+	align-self: center;
+}
+
+#ple-s1 div.plenaria img:hover{
+	transition-property: transform;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+	transition-duration: 0.5s;
+	transform: scale(1.3);
+	
+}
+
+#ple-s1 div.plenaria img{
+	transition-property: transform;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+	transition-duration: 0.5s;
+	transform: scale(1);
+	
+}
+
+#ple-s1 article ul{
+	margin: 0 20px;
+	font-size: 18px;
+}
+
+#ple-s1 h2{
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #872b2f;
+	border-bottom: 5px solid #872b2f;
+	margin: 40px 0;
+}
+
+#ple-s1 h3{
+	font-size: 25px;
+	text-transform: uppercase;
+	color: rgb(80, 80, 80);
+	margin: 25px 0;
+}
+
+#ple-s1 p,li{
+	line-height: 25px;
+}
+
+/*
+	------------------------------------ DELEGACIAS ------------------------------------
+*/
+
+#del{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-column: 2/3;
+	margin: 20px 0;
+}
+
+#del article{
+	grid-column: 1/2;
+	margin-bottom: 50px;
+}
+
+#del h2{
+	grid-column: 1/3;
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #872b2f;
+	border-bottom: 5px solid #872b2f;
+	margin: 40px 0;
+}
+
+#del h3{
+	font-size: 25px;
+	text-transform: uppercase;
+	color: rgb(80, 80, 80);
+	margin: 25px 0;
+}
+
+#del h4{
+	margin: 20px 0 !important;
+	text-transform: uppercase;
+}
+
+#del tr{
+	display: block;
+	text-align: left;
+}
+
+#del td{
+	padding: 7px 10px 7px 0;
+}
+
+#del span{
+	font-weight: 500;
+}
+
+#del div.cariri-img{
+	grid-column: 2/3;
+	width: 300px;
+	justify-self: flex-end;
+	align-self: center;
+}
+
+#del div img{
+	width: 300px;
+}
+
+#del .municipios{
+	grid-column: 1/3;
+}
+
+/*
+	------------------------------------ LEGISLAÇÃO ------------------------------------
+*/
+
+#les{
+	
 }
